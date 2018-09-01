@@ -68,7 +68,6 @@ void ofApp::newMidiMessage(ofxMidiMessage &msg)
 {
 	if (msg.status == MIDI_NOTE_ON)
 	{
-		ofLogNotice()<<msg.pitch;
 		_dmx.setLevel(msg.pitch, msg.velocity * 2);
 	}
 }
