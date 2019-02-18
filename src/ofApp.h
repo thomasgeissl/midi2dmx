@@ -14,5 +14,5 @@ public:
 	void newMidiMessage(ofxMidiMessage &eventArgs);
 	ofxMidiIn _midiIn;
 	ofxDmx _dmx;
-	std::string _name = "ofMIDIDMX";
+	std::string _name = "ofMIDI2DMX";
 };
